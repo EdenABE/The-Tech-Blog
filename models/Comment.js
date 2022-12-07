@@ -8,7 +8,7 @@ Comment.init(
     body: {
       type: DataTypes.STRING,
       allowNull: false,
-    }
+    },
   },
   {
     sequelize,
@@ -16,4 +16,4 @@ Comment.init(
   }
 );
 
-module.exports = Project;
+module.exports = Comment;

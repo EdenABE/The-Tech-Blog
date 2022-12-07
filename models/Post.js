@@ -1,23 +1,24 @@
 const { Model, DataTypes, Sequelize } = require('sequelize');
 const sequelize = require('../config/connection');
+const { post } = require('../controllers/dashboardRoutes');
 
-class Comment extends Model {}
+class Post extends Model {}
 
-Comment.init(
+Post.init(
   {
     title: {
-        type: DataTypes.STRING,
-        allowNull: false,
+      type: DataTypes.STRING,
+      allowNull: false,
     },
     body: {
       type: DataTypes.STRING,
       allowNull: false,
-    }
+    },
   },
   {
     sequelize,
-    modelName: 'Comment',
+    modelName: 'Post',
   }
 );
 
-module.exports = Project;
+module.exports = Post;
