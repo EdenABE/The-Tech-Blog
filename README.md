@@ -82,6 +82,6 @@ Create an account or login with an existing account to post your tech vlog
 ## Deployed app
 
 ```
-
+https://edenabe.github.io/The-Tech-Blog/
 
 ```
